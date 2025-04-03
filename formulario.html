@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<head>
+    <title>Formulário da Ana Luiza Scharf</title>
+</head>
+<body>
+
+    <!-- Seção de apresentação -->
+    <header>
+        <h1>Ana Luiza Scharf</h1>
+        <label>Vamos treinar o formulário.</label>
+    </header>
+
+    <h2>Tarefas do dia</h2>
+    <section>
+        <form action="submit.php" method="post">
+
+            <label>
+                Login
+                <input type="text" name="login" required>
+            </label><br><br>
+
+            <label>
+                Senha
+                <input type="password" name="password" required>
+            </label><br><br>
+
+            <label>
+                E-mail
+                <input type="email" name="email" required>
+            </label><br><br>
+
+            <label>Aula são os cursos que você leciona:</label><br>
+            <label><input type="checkbox" name="cursos" value="proeja"> PROEJA</label><br>
+            <label><input type="checkbox" name="cursos" value="ads"> ADS</label><br>
+            <label><input type="checkbox" name="cursos" value="tele"> TELE</label><br>
+            <label><input type="checkbox" name="cursos" value="qui"> QUI</label><br>
+            <label><input type="checkbox" name="cursos" value="outros"> OUTROS</label><br><br>
+
+            <label>
+                Qual é a sua aula de hoje?
+                <select name="aulas_do_dia" required>
+                    <optgroup label="Segunda-feira">
+                        <option value="IF2">Informática Básica II</option>
+                    </optgroup>
+                    <optgroup label="Terça-feira">
+                        <option value="FED">Programação FrontEnd II</option>
+                        <option value="BCD">Banco de Dados</option>
+                    </optgroup>
+                    <optgroup label="Quarta-feira">
+                        <option value="PRG">Programação I</option>
+                    </optgroup>
+                    <optgroup label="Quinta-feira">
+                        <option value="FED">Programação FrontEnd II</option>
+                        <option value="BCD">Banco de Dados</option>
+                    </optgroup>
+                    <optgroup label="Sexta-feira">
+                        <option value="PRG">Programação I</option>
+                    </optgroup>
+                </select>
+            </label><br><br>
+
+            <label>
+                Informe o dia da aula
+                <input type="date" name="dia_aula" required>
+            </label><br><br>
+
+            <label>
+                Informe o horário de início da aula
+                <input type="time" name="horario_inicio_aula" required>
+            </label><br><br>
+
+            <label>
+                Informe quando acaba o semestre
+                <input type="month" name="mes_acaba_semestre" required>
+            </label><br><br>
+
+            <label>
+                Informe a semana das provas finais
+                <input type="week" name="semana_provas_finais" required>
+            </label><br><br>
+
+            <label>
+                Dê a nota de participação total da turma (1 a 10)
+                <input type="range" name="participacao" min="1" max="10" step="1">
+            </label><br><br>
+
+            <label>
+                Dê a cor para disciplina
+                <input type="color" name="cor_disciplina">
+            </label><br><br>
+
+            <label>
+                Envie um arquivo PDF relacionado à aula
+                <input type="file" name="arquivo" accept=".pdf" required>
+            </label><br><br>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Redefinir</button>
+        </form>
+    </section>
+</body>
+</html>
