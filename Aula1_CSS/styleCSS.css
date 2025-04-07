@@ -1,0 +1,54 @@
+﻿/* Estilo para o corpo da página */
+header {
+    font-family: Arial, sans-serif;
+    background-color: #448ed0; /* cor do PDF */
+    color: #111027; /* cor do PDF */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000; /* cor do PDF */
+    color: #111027; /* cor do PDF */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo para o section da página */
+section {
+    font-family: Arial, sans-serif;
+    background-color: #9ed126; /* cor do PDF */
+    color: #111027; /* cor do PDF */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Estilo para o article da página */
+article {
+    font-family: Arial, sans-serif;
+    background-color: #b24fbf; /* cor do PDF */
+    color: #111027; /* cor do PDF */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: pink;
+}
+
+/* Regra para o ID (#header) */
+#header {
+    color: #a02323; /* Vermelho escuro */
+}
+
+/* Regra para a classe (.titulo) */
+.titulo {
+    color: #562bf2; /* Azul-violeta */
+}
+
+/* Regra para o elemento (p) */
+p {
+    color: green; /* Verde */
+}

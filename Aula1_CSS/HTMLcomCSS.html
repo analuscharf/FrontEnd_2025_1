@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<head>
+    <title> Intodução ao CSS</title>
+    <!-- Folha de estilo externa -->
+    <link rel="stylesheet" href="styleCSS.css">
+    <style> 
+        h1 {
+            color: purple;
+            }
+    </style>
+  </head>
+<body>
+
+    <header id="header">
+        <h1 class="titulo">Bem-vindos!</h1>
+        <p style="color: blue;">Aqui é Programação FrontEnd.</p>
+    </header>
+
+    <section>
+        
+        <h1 style="font-size: xx-large; color: darkblue">Treinando CSS</h1>
+        
+        <h2 style=" color: red "> Vamos lá</h2>
+       
+        <p style="font-family: 'Comforter';">
+            Este é um parágrafo com a fonte diferentes.
+        </p>
+    </section>
+    <article>
+        <h2 style="color: blue !important;">Aqui é o article</h2>
+
+        <p style="font-size: 14pt; margin-bottom: 10pt;">
+            Este parágrafo usa fonte de 14pt (pontos).
+        </p>
+
+        <p style="font-size: 1cm; margin-bottom: 1cm;">
+            Este parágrafo usa fonte de 1cm (centímetro).
+        </p>
+
+        <p style="font-size: 5mm; margin-bottom: 5mm;">
+            Este parágrafo usa fonte de 5mm (milímetros).
+        </p>
+
+        <p style="font-size: 0.5in; margin-bottom: 0.2in;">
+            Este parágrafo usa fonte de 0.5in (polegadas).
+        </p>
+
+        <p style="font-size: 2pc; margin-bottom: 1pc;">
+            Este parágrafo usa fonte de 2pc (picas).
+        </p>
+
+
+        <!-- em: relativo ao tamanho da fonte do elemento pai -->
+        <p style="font-size: 2em; margin-bottom: 1em;">
+            Este parágrafo usa <strong>2em</strong> (relativo ao tamanho da fonte do elemento pai).
+        </p>
+
+        <!-- rem: relativo ao tamanho da fonte do elemento raiz (html) -->
+        <p style="font-size: 2rem; margin-bottom: 1rem;">
+            Este parágrafo usa <strong>2rem</strong> (relativo à fonte do elemento raiz).
+        </p>
+
+        <!-- %: relativo ao tamanho do elemento pai (geralmente útil em larguras e alturas) -->
+        <p style="font-size: 150%; margin-bottom: 5%;">
+            Este parágrafo usa <strong>150%</strong> do tamanho da fonte do elemento pai.
+        </p>
+
+        <!-- vw: relativo à largura da janela de visualização (viewport) -->
+        <p style="font-size: 5vw; margin-bottom: 2vw;">
+            Este parágrafo usa <strong>5vw</strong> (5% da largura da janela).
+        </p>
+
+        <!-- vh: relativo à altura da janela de visualização (viewport) -->
+        <p style="font-size: 5vh; margin-bottom: 2vh;">
+            Este parágrafo usa <strong>5vh</strong> (5% da altura da janela).
+        </p>
+
+    </article>
+
+
+
+</body>
+    </html>
