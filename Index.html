@@ -1,7 +1,7 @@
-﻿﻿﻿
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <head>
     <title>Ana Luiza Scharf</title>
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -100,55 +100,59 @@
     </article>
 
 
-    <!-- Seção de horários -->
-    <section>
-        <h2>Meus hoários de aula</h2>
-        <table border="1">
-            <tr>
-                <th></th>
-                <th colspan="6">Dias da Semana</th>
-            </tr>
-            <td rowspan="6">Horários</td>
-            <tr>
-                <th></th>
-                <th>SEG</th>
-                <th>TER</th>
-                <th>QUA</th>
-                <th>QUI</th>
-                <th>SEX</th>
-            </tr>
-            <tr>
-                <td>7h30</td>
-                <td></td>
-                <td></td>
-                <td>PRG1</td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>9h40</td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td>PRG1</td>
-            </tr>
-            <tr>
-                <td>18h30</td>
-                <td>INF2</td>
-                <td>FE1</td>
-                <td></td>
-                <td>FE1</td>
-                <td></td>
-            </tr>
-            <tr>
-                <td>20h40</td>
-                <td>INF2</td>
-                <td>BCD</td>
-                <td></td>
-                <td>BCD</td>
-                <td></td>
-            </tr>
+<!-- Seção de horários -->
+    <section id="horarios">
+        <h2 class="titulo-secao">Meus Horários de Aula</h2>
+        <table class="tabela-horarios" border="1">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th colspan="6" class="dias-semana">Dias da Semana</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="6" class="horarios">Horários</td>
+                    <th></th>
+                    <th>SEG</th>
+                    <th>TER</th>
+                    <th>QUA</th>
+                    <th>QUI</th>
+                    <th>SEX</th>
+                </tr>
+                <tr>
+                    <td class="hora">7h30</td>
+                    <td></td>
+                    <td></td>
+                    <td class="disciplina">PRG1</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="hora">9h40</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td class="disciplina">PRG1</td>
+                </tr>
+                <tr>
+                    <td class="hora">18h30</td>
+                    <td class="disciplina">INF2</td>
+                    <td class="disciplina">FE1</td>
+                    <td></td>
+                    <td class="disciplina">FE1</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="hora">20h40</td>
+                    <td class="disciplina">INF2</td>
+                    <td class="disciplina">BCD</td>
+                    <td></td>
+                    <td class="disciplina">BCD</td>
+                    <td></td>
+                </tr>
+            </tbody>
         </table>
     </section>
     <section>
@@ -219,6 +223,3 @@
     </footer>
 </body>
 </html>
-
-
-

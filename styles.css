@@ -1,0 +1,103 @@
+/* Estilo para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf4dc; /* Fundo pastel amarelo claro */
+    color: #333; /* Texto escuro */
+}
+
+/* Estilo para o cabeçalho */
+#cabecalho {
+    background-color: #277756; /* Verde escuro */
+    color: #FFF4EC; /* Branco claro */
+    text-align: center;
+}
+
+.titulo-pagina {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 18px;
+}
+
+/* Estilo para as seções */
+section {
+    background-color: #fff;
+}
+
+.titulo-secao {
+    font-size: 24px;
+    color: #333;
+
+}
+
+/* Estilo para listas de habilidades */
+.lista-habilidades li {
+    background-color: #f8c3d9; /* Rosa claro */
+    color: #333;
+
+}
+
+.lista-habilidades-futuras li {
+    background-color: #d4f4e8; /* Verde claro */
+    color: #333;
+
+}
+
+
+/* Estilo para tabelas */
+.tabela-horarios td {
+    background-color: #fbe8a6; /* Amarelo pastel */
+    color: #333;
+}
+
+.tabela-horarios th {
+    background-color: #16ABCD; /* Azul claro */
+    color: #FFF4EC; /* Branco claro */
+}
+
+.dias-semana {
+    background-color: #16ABCD; /* Azul claro */
+    color: #FFF4EC; /* Branco claro */
+}
+
+.horarios {
+    font-weight: bold;
+    background-color: #e6f0ff; /* Azul claro */
+}
+
+.hora {
+    font-style: italic;
+    color: #555;
+}
+
+.disciplina {
+    background-color: #ff9a76; /* Laranja pastel */
+    color: white;
+    font-weight: bold;
+}
+
+/* Estilo para tabela de ônibus */
+.tabela-onibus td {
+    background-color: #d0e8f2; /* Azul pastel */
+    color: #333;
+}
+
+.tabela-onibus th {
+    background-color: #ffe4b5; /* Bege pastel */
+    color: #333;
+}
+
+/* Estilo para o rodapé */
+#rodape {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+
+}
+
+.footnote {
+    font-size: 12px;
+    color: #bbb;
+}
