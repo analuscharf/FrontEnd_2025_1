@@ -1,0 +1,45 @@
+﻿/* Estilo para o corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fcf4dc; /* Fundo pastel amarelo claro */
+    color: #333; /* Texto escuro */
+}
+
+
+
+
+/* Estilo para o cabeçalho */
+header {
+   text-align: center; /* Centraliza o título */
+    margin: 0; /* Remove margens extras */
+    color: #5C4033
+}
+
+.minha-foto {
+    margin: 20px auto; /* auto centraliza horizontalmente */
+    border: 3px dashed #333;
+    display: block; /* transforma a imagem em um bloco, necessário para centralizar */
+    text-align: center
+}
+
+
+form {
+    border: 8px solid #5C4033; /* Borda bem espessa e marrom-escuro */
+    padding: 10px; /* Espaço interno entre o conteúdo e a borda */
+    margin: 50px auto; /* Centraliza a caixa horizontalmente e adiciona margem ao redor */
+    background-color: #FDF5E6; /* Fundo bege claro */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    width: 80%; /* Define a largura da caixa */
+    font-family: Arial, sans-serif; /* Fonte legível */
+    text-align: left;
+    color: #333;
+}
+
+
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    margin: 0; /* Remove margens extras */
+    color: #5C4033
+}
+

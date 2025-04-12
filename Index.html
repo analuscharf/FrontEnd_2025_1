@@ -1,7 +1,7 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <head>
     <title>Ana Luiza Scharf</title>
-   <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
@@ -13,45 +13,49 @@
 
 
     <!----------------------------->
-    <img src="Imagem\Foto_Ana.jpg" alt="minha foto" height="20%" width="30%">
+    <img class="minha-foto " src="Imagem\Foto_Ana.jpg" alt="minha foto" height="20%" width="30%">
 
 
     <!-- Seção de habilidades -->
     <section>
-        <h2>Minhas habilidades</h2>
-        <ol>
-            <li>Resolução de problemas</li>
-            <li>Programação em C++</li>
-            <li>Banco de Dados</li>
-            <li>Trabalho em equipe</li>
-            <li>Comunicação técnica</li>
-        </ol>
+        <div class="caixa">
+            <h2>Minhas habilidades</h2>
+            <ol>
+                <li>Resolução de problemas</li>
+                <li>Programação em C++</li>
+                <li>Banco de Dados</li>
+                <li>Trabalho em equipe</li>
+                <li>Comunicação técnica</li>
+            </ol>
+        </div>
 
-        <h2>Habilidades que desejo adquirir</h2>
-        <ul>
-            <li>
-                <a href="https://learn.microsoft.com/pt-br/training/browse/" target="_blank">
-                    <img src="Imagem\Icones\codificacao.png" alt="pag. web" height="2%" width="2%">
-                </a>
-                Desenvolvimento Web (HTML, CSS, JavaScript)
-            </li>
-            <li>
-                <a href="https://www.ev.org.br/trilhas-de-conhecimento/linguagem-de-programacao-python" target="_self">
-                    <img src="Imagem\Icones\python.png" alt="pyhton" height="2%" width="2%">
-                </a>
-                Programação avançada em Python
-            </li>
-            <li>
-                <a href="https://especializacao.ccec.puc-rio.br/cursos-livres/arquitetura-projeto-software" target="_parent">
-                    <img src="Imagem\Icones\arqutitetura.png" alt="arquitetura" height="2%" width="2%">
-                </a>
-                Arquitetura de software
-            </li>
-        </ul>
+        <div class="caixa">
+            <h2>Habilidades que desejo adquirir</h2>
+            <ul>
+                <li>
+                    <a href="https://learn.microsoft.com/pt-br/training/browse/" target="_blank">
+                        <img src="Imagem\Icones\codificacao.png" alt="pag. web" height="5%" width="5%">
+                    </a>
+                    Desenvolvimento Web (HTML, CSS, JavaScript)
+                </li>
+                <li>
+                    <a href="https://www.ev.org.br/trilhas-de-conhecimento/linguagem-de-programacao-python" target="_self">
+                        <img src="Imagem\Icones\python.png" alt="pyhton" height="5%" width="5%">
+                    </a>
+                    Programação avançada em Python
+                </li>
+                <li>
+                    <a href="https://especializacao.ccec.puc-rio.br/cursos-livres/arquitetura-projeto-software" target="_parent">
+                        <img src="Imagem\Icones\arqutitetura.png" alt="arquitetura" height="5%" width="5%">
+                    </a>
+                    Arquitetura de software
+                </li>
+            </ul>
+        </div>
     </section>
 
 
-    <article>
+    <article id="disciploacursada">
         <h2>Disciplinas cursadas</h2>
         <dl>
             <dt>Informática Básica</dt>
@@ -100,7 +104,7 @@
     </article>
 
 
-<!-- Seção de horários -->
+    <!-- Seção de horários -->
     <section id="horarios">
         <h2 class="titulo-secao">Meus Horários de Aula</h2>
         <table class="tabela-horarios" border="1">
@@ -155,9 +159,11 @@
             </tbody>
         </table>
     </section>
+
+    <br><br>
     <section>
         <h2>Horários de ônibus saindo de Floripa</h2>
-        <table border="1">
+        <table class="tabela-onibus">>
             <tr>
                 <th>Horário de Saída</th>
                 <th>Empresa</th>

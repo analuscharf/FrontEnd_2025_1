@@ -1,4 +1,4 @@
-/* Estilo para o corpo */
+﻿/* Estilo para o corpo */
 body {
     font-family: Arial, sans-serif;
     background-color: #fcf4dc; /* Fundo pastel amarelo claro */
@@ -6,98 +6,152 @@ body {
 }
 
 /* Estilo para o cabeçalho */
-#cabecalho {
-    background-color: #277756; /* Verde escuro */
-    color: #FFF4EC; /* Branco claro */
-    text-align: center;
+header {
+    font-style: italic; /* Torna todo o texto do header em itálico */
+    text-align: center
 }
 
-.titulo-pagina {
-    font-size: 28px;
-    font-weight: bold;
+.minha-foto {
+    margin: 20px auto; /* auto centraliza horizontalmente */
+    border: 3px dashed # #333;
+    display: block; /* transforma a imagem em um bloco, necessário para centralizar */
+    text-align: center
+}
+#disciploacursada {
+       text-align: center; /* Centraliza todo o texto */
+  }
+
+.caixa {
+    border: 8px solid #5C4033; /* Borda bem espessa e marrom-escuro */
+    padding: 10px; /* Espaço interno entre o conteúdo e a borda */
+    margin: 50px auto; /* Centraliza a caixa horizontalmente e adiciona margem ao redor */
+    background-color: #FDF5E6; /* Fundo bege claro */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    width: 80%; /* Define a largura da caixa */
+    font-family: Arial, sans-serif; /* Fonte legível */
+    text-align: left
 }
 
-.subtitulo {
-    font-size: 18px;
+article {
+    border: 8px solid #5C4033; /* Borda bem espessa e marrom-escuro */
+    padding: 10px; /* Espaço interno entre o conteúdo e a borda */
+    margin: 50px auto; /* Centraliza a caixa horizontalmente e adiciona margem ao redor */
+    background-color: #FDF5E6; /* Fundo bege claro */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    width: 80%; /* Define a largura da caixa */
+    font-family: Arial, sans-serif; /* Fonte legível */
+    text-align: left
 }
 
-/* Estilo para as seções */
-section {
-    background-color: #fff;
-}
-
-.titulo-secao {
-    font-size: 24px;
-    color: #333;
-
-}
-
-/* Estilo para listas de habilidades */
-.lista-habilidades li {
-    background-color: #f8c3d9; /* Rosa claro */
-    color: #333;
-
-}
-
-.lista-habilidades-futuras li {
-    background-color: #d4f4e8; /* Verde claro */
-    color: #333;
-
+dt {
+    border: 1px solid #5C4033; /* Borda fina marrom escuro */
+    padding: 5px; /* Espaço interno para afastar o texto da borda */
+    margin: 5px 0; /* Espaçamento externo entre os itens */
+    background-color: #FDF5E6; /* Cor de fundo bege claro */
 }
 
 
-/* Estilo para tabelas */
-.tabela-horarios td {
-    background-color: #fbe8a6; /* Amarelo pastel */
-    color: #333;
+h2 {
+    text-align: center; /* Centraliza o título */
+    margin: 0; /* Remove margens extras */
+    color: #5C4033
 }
 
-.tabela-horarios th {
-    background-color: #16ABCD; /* Azul claro */
-    color: #FFF4EC; /* Branco claro */
+footer{
+    font-size: 12px;
+    color: #6e2424;
+    border: 2px dotted #5C4033; /* Borda pontilhada marrom */
+    padding: 15px; /* Espaço interno da caixa */
+    margin-left: auto; /* Centraliza à direita */
+    margin-right: 0;
+    background-color: #FDF5E6; /* Fundo bege */
+    width: 50%; /* Define a largura da caixa */
+    text-align: center; /* Centraliza o texto dentro da caixa */
 }
+
+
+
+aside {
+    background: linear-gradient(135deg, #8B4513, #D2691E, #F4A460); /* Gradiente em tons terrosos */
+    border: 3px solid #5C4033; /* Borda sólida marrom-escuro */
+    padding: 20px; /* Espaço interno */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    width: 80%; /* Largura da caixa */
+    text-align: center; /* Centraliza o texto */
+    font-family: Arial, sans-serif; /* Fonte legível */
+    color: #FFF8DC; /* Cor do texto */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}
+
+.tabela-horarios {
+    width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+    border-collapse: collapse; /* Remove espaços entre as bordas */
+}
+
+    .tabela-horarios td {
+        background-color: #FDF5E6; /* Bege claro */
+        color: #5C4033; /* Marrom escuro */
+        border: 1px solid #5C4033; /* Borda marrom ao redor das células */
+        padding: 10px; /* Espaçamento interno */
+        text-align: center; /* Centraliza o texto nas células */
+    }
+
+    .tabela-horarios th {
+        background-color: #A0522D; /* Marrom médio (Sienna) */
+        color: #FFF8DC; /* Branco suave */
+        border: 1px solid #5C4033; /* Borda marrom ao redor do cabeçalho */
+        padding: 10px; /* Espaçamento interno */
+        text-align: center; /* Centraliza o texto no cabeçalho */
+    }
 
 .dias-semana {
-    background-color: #16ABCD; /* Azul claro */
-    color: #FFF4EC; /* Branco claro */
+    background-color: #8B4513; /* Marrom escuro */
+    color: #FFF8DC; /* Branco suave */
+    font-weight: bold; /* Destaque no texto */
+    text-align: center;
 }
 
 .horarios {
     font-weight: bold;
-    background-color: #e6f0ff; /* Azul claro */
+    background-color: #D2B48C; /* Bege terroso */
+    color: #5C4033; /* Marrom escuro */
+    text-align: center; /* Centraliza o texto */
+    border: 1px solid #5C4033; /* Borda adicional para destaque */
 }
 
 .hora {
     font-style: italic;
-    color: #555;
+    color: #A0522D; /* Marrom médio */
 }
 
 .disciplina {
-    background-color: #ff9a76; /* Laranja pastel */
-    color: white;
+    background-color: #DEB887; /* Bege suave */
+    color: #5C4033; /* Texto marrom escuro */
     font-weight: bold;
+    text-align: center; /* Centraliza disciplinas */
 }
 
 /* Estilo para tabela de ônibus */
-.tabela-onibus td {
-    background-color: #d0e8f2; /* Azul pastel */
-    color: #333;
+.tabela-onibus {
+    width: 80%; /* Define a largura da tabela (ajustada para centralização) */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border: 2px solid #5C4033; /* Borda marrom ao redor da tabela */
+    border-collapse: collapse; /* Remove espaços entre bordas das células */
 }
 
-.tabela-onibus th {
-    background-color: #ffe4b5; /* Bege pastel */
-    color: #333;
-}
+ .tabela-onibus td {
+    background-color: #FDF5E6; /* Bege claro */
+    color: #5C4033; /* Marrom escuro */
+    border: 1px solid #5C4033; /* Borda marrom entre células */
+    padding: 10px; /* Espaçamento interno nas células */
+    text-align: center; /* Centraliza o texto nas células */
+   }
 
-/* Estilo para o rodapé */
-#rodape {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
+   .tabela-onibus th {
+    background-color: #A0522D; /* Marrom médio */
+    color: #FFF8DC; /* Branco suave */
+    border: 1px solid #5C4033; /* Borda marrom no cabeçalho */
+    padding: 10px; /* Espaçamento interno no cabeçalho */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+    }
 
-}
-
-.footnote {
-    font-size: 12px;
-    color: #bbb;
-}
