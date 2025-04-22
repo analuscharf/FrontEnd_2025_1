@@ -13,7 +13,7 @@
 
 
     <!----------------------------->
-    <img class="minha-foto " src="Imagem\Foto_Ana.jpg" alt="minha foto" height="20%" width="30%">
+    <img id="minhafoto" src="Imagem\Foto_Ana.jpg" alt="minha foto" height="20%" width="30%">
 
 
     <!-- Seção de habilidades -->
@@ -55,7 +55,7 @@
     </section>
 
 
-    <article id="disciploacursada">
+    <article class="caixa">
         <h2>Disciplinas cursadas</h2>
         <dl>
             <dt>Informática Básica</dt>
@@ -106,23 +106,23 @@
 
     <!-- Seção de horários -->
     <section id="horarios">
-        <h2 class="titulo-secao">Meus Horários de Aula</h2>
+        <h2>Meus Horários de Aula</h2>
         <table class="tabela-horarios" border="1">
             <thead>
                 <tr>
-                    <th></th>
-                    <th colspan="6" class="dias-semana">Dias da Semana</th>
+                    <th class="cabecalhotabela"></thid="cabecalhotabela">
+                    <th colspan="6" class="cabecalhotabela">Dias da Semana</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td rowspan="6" class="horarios">Horários</td>
-                    <th></th>
-                    <th>SEG</th>
-                    <th>TER</th>
-                    <th>QUA</th>
-                    <th>QUI</th>
-                    <th>SEX</th>
+                    <td rowspan="6" class="cabecalhotabela">Horários</td>
+                    <th class="cabecalhotabela"></thid="cabecalhotabela">
+                    <th class="cabecalhotabela">SEG</th>
+                    <th class="cabecalhotabela">TER</th>
+                    <th class="cabecalhotabela">QUA</th>
+                    <th class="cabecalhotabela">QUI</th>
+                    <th class="cabecalhotabela">SEX</th>
                 </tr>
                 <tr>
                     <td class="hora">7h30</td>
@@ -163,7 +163,8 @@
     <br><br>
     <section>
         <h2>Horários de ônibus saindo de Floripa</h2>
-        <table class="tabela-onibus">>
+        <table class="tabela-onibus">
+            >
             <tr>
                 <th>Horário de Saída</th>
                 <th>Empresa</th>
@@ -220,9 +221,63 @@
             </tr>
         </table>
     </section>
+
+
+    <section class="meusfavoritos">
+
+        <!-- Lista de Filmes Favoritos -->
+        <div class="coluna"  id="top_filmes">
+            <h2>Meus filmes favoritos</h2>
+            <ul>
+                <li>Orgulho e Preconceito (2005)</li>
+                <li>Um Amor, Mil Casamentos</li>
+                <li>Vestida para Casar</li>
+                <li>Mulan</li>
+                <li>Era do Gelo</li>
+                <li>Simplesmente Amor</li>
+                <li>O Diário de Bridget Jones</li>
+                <li>Cartas para Julieta</li>
+                <li>Amor à Segunda Vista</li>
+                <li>Enrolados</li>
+            </ul>
+        </div>
+
+        <!-- Atividades com Imagens Clicáveis -->
+        <div class="coluna" id="atividades">
+            <h2>Minhas atividades</h2>
+            <br>
+            <img src="Imagem/baralho.jpg" alt="baralho">
+            <img src="Imagem/cachorro.jpg" alt="cachorro">
+            <img src="Imagem/caminhada.jpg" alt="caminhada">
+            <img src="Imagem/cinema.jpg" alt="cinema">
+            <img src="Imagem/dirigir.jpg" alt="dirigir">
+            <img src="Imagem/familia.jpg" alt="familia">
+            <img src="Imagem/musica.jpg" alt="musica">
+            <img src="Imagem/namorar.jpg" alt="namorar">
+        </div>
+
+        <!-- site legais -->
+        <div class="coluna"  id="top_sites">
+            <h2>Sites para recomendar</h2>
+            <ul>
+                <li>Pinterest</li>
+                <li>Uol</li>
+                <li>Youtube</li>
+                <li>ImdB</li>
+                <li>Wikipedia</li>
+                <li>Letras</li>
+                <li>Netflix</li>
+                <li>Privalia</li>
+               </ul>
+        </div>
+
+    </section>
+
+
     <aside>
         <a href="formulario.html" ">Acesse o Formulário da aula do dia</a>
     </aside>
+
 
     <footer>
         <p>Ícones criados por <a href="https://www.flaticon.com/br/icones-gratis/algoritmo" title="algoritmo ícones">Algoritmo ícones criados por Freepik - Flaticon</a> </p>

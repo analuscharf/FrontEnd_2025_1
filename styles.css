@@ -11,15 +11,18 @@ header {
     text-align: center
 }
 
-.minha-foto {
+#minhafoto {
     margin: 20px auto; /* auto centraliza horizontalmente */
-    border: 3px dashed # #333;
+    border: 3px dashed #333;
     display: block; /* transforma a imagem em um bloco, necessário para centralizar */
     text-align: center
 }
-#disciploacursada {
-       text-align: center; /* Centraliza todo o texto */
-  }
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    margin: 0; /* Remove margens extras */
+    color: #5C4033
+}
 
 .caixa {
     border: 8px solid #5C4033; /* Borda bem espessa e marrom-escuro */
@@ -43,6 +46,10 @@ article {
     text-align: left
 }
 
+dl {
+   text-align: center; /* Centraliza todo o texto */
+}
+
 dt {
     border: 1px solid #5C4033; /* Borda fina marrom escuro */
     padding: 5px; /* Espaço interno para afastar o texto da borda */
@@ -51,37 +58,27 @@ dt {
 }
 
 
-h2 {
-    text-align: center; /* Centraliza o título */
-    margin: 0; /* Remove margens extras */
-    color: #5C4033
-}
-
-footer{
-    font-size: 12px;
-    color: #6e2424;
-    border: 2px dotted #5C4033; /* Borda pontilhada marrom */
-    padding: 15px; /* Espaço interno da caixa */
-    margin-left: auto; /* Centraliza à direita */
-    margin-right: 0;
-    background-color: #FDF5E6; /* Fundo bege */
-    width: 50%; /* Define a largura da caixa */
-    text-align: center; /* Centraliza o texto dentro da caixa */
-}
-
-
-
-aside {
-    background: linear-gradient(135deg, #8B4513, #D2691E, #F4A460); /* Gradiente em tons terrosos */
-    border: 3px solid #5C4033; /* Borda sólida marrom-escuro */
-    padding: 20px; /* Espaço interno */
-    margin: 20px auto; /* Centraliza horizontalmente */
-    width: 80%; /* Largura da caixa */
+.cabecalhotabela{
+    font-weight: bold;
+    background-color: #D2B48C; /* Bege terroso */
+    color: #5C4033; /* Marrom escuro */
     text-align: center; /* Centraliza o texto */
-    font-family: Arial, sans-serif; /* Fonte legível */
-    color: #FFF8DC; /* Cor do texto */
-    text-align: center; /* Centraliza o texto dentro da caixa */
+    border: 1px solid #5C4033; /* Borda adicional para destaque */
 }
+
+.hora {
+    font-style: italic;
+    color: #A0522D; /* Marrom médio */
+}
+
+.disciplina {
+    background-color: #DEB887; /* Bege suave */
+    color: #5C4033; /* Texto marrom escuro */
+    font-weight: bold;
+    text-align: center; /* Centraliza disciplinas */
+}
+
+
 
 .tabela-horarios {
     width: 100%; /* Faz a tabela ocupar toda a largura disponível */
@@ -104,33 +101,6 @@ aside {
         text-align: center; /* Centraliza o texto no cabeçalho */
     }
 
-.dias-semana {
-    background-color: #8B4513; /* Marrom escuro */
-    color: #FFF8DC; /* Branco suave */
-    font-weight: bold; /* Destaque no texto */
-    text-align: center;
-}
-
-.horarios {
-    font-weight: bold;
-    background-color: #D2B48C; /* Bege terroso */
-    color: #5C4033; /* Marrom escuro */
-    text-align: center; /* Centraliza o texto */
-    border: 1px solid #5C4033; /* Borda adicional para destaque */
-}
-
-.hora {
-    font-style: italic;
-    color: #A0522D; /* Marrom médio */
-}
-
-.disciplina {
-    background-color: #DEB887; /* Bege suave */
-    color: #5C4033; /* Texto marrom escuro */
-    font-weight: bold;
-    text-align: center; /* Centraliza disciplinas */
-}
-
 /* Estilo para tabela de ônibus */
 .tabela-onibus {
     width: 80%; /* Define a largura da tabela (ajustada para centralização) */
@@ -139,19 +109,97 @@ aside {
     border-collapse: collapse; /* Remove espaços entre bordas das células */
 }
 
- .tabela-onibus td {
-    background-color: #FDF5E6; /* Bege claro */
-    color: #5C4033; /* Marrom escuro */
-    border: 1px solid #5C4033; /* Borda marrom entre células */
-    padding: 10px; /* Espaçamento interno nas células */
-    text-align: center; /* Centraliza o texto nas células */
-   }
-
-   .tabela-onibus th {
+.tabela-onibus th {
     background-color: #A0522D; /* Marrom médio */
     color: #FFF8DC; /* Branco suave */
     border: 1px solid #5C4033; /* Borda marrom no cabeçalho */
     padding: 10px; /* Espaçamento interno no cabeçalho */
     text-align: center; /* Centraliza o texto no cabeçalho */
-    }
+}
 
+.tabela-onibus td {
+    background-color: #FDF5E6; /* Bege claro */
+    color: #5C4033; /* Marrom escuro */
+    border: 1px solid #5C4033; /* Borda marrom entre células */
+    padding: 10px; /* Espaçamento interno nas células */
+    text-align: center; /* Centraliza o texto nas células */
+}
+
+
+.meusfavoritos {
+    display: flex;
+    flex-direction: wrap;
+    justify-content: space-between;
+    
+}
+
+
+.coluna {
+    border: 8px solid #5C4033; /* Borda bem espessa e marrom-escuro */
+    padding: 10px; /* Espaço interno entre o conteúdo e a borda */
+    margin: 50px auto; /* Centraliza a caixa horizontalmente e adiciona margem ao redor */
+    background-color: #FDF5E6; /* Fundo bege claro */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    width:30%; /* Define a largura da caixa */
+    font-family: Arial, sans-serif; /* Fonte legível */
+    text-align: center
+}
+
+/* Pseudo-classes na lista de filmes */
+#top_filmes li:hover {
+    color: #ff6600; /* Altera a cor do texto ao passar o mouse */
+    font-weight: bold;
+}
+
+#top_filmes li:first-child {
+    font-style: italic; /* Destaca o primeiro filme da lista */
+}
+
+#atividades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+#atividades img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#atividades img:hover {
+    transform: scale(1.1);
+}
+
+
+#top_sites li:hover {
+    color: #ff6600; /* Altera a cor do texto ao passar o mouse */
+    font-weight: bold;
+}
+
+aside {
+    background: linear-gradient(135deg, #8B4513, #D2691E, #F4A460); /* Gradiente em tons terrosos */
+    border: 3px solid #5C4033; /* Borda sólida marrom-escuro */
+    padding: 20px; /* Espaço interno */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    width: 80%; /* Largura da caixa */
+    text-align: center; /* Centraliza o texto */
+    font-family: Arial, sans-serif; /* Fonte legível */
+    color: #FFF8DC; /* Cor do texto */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}
+
+footer {
+    font-size: 12px;
+    color: #6e2424;
+    border: 2px dotted #5C4033; /* Borda pontilhada marrom */
+    padding: 15px; /* Espaço interno da caixa */
+    margin-left: auto; /* Centraliza à direita */
+    margin-right: 0;
+    background-color: #FDF5E6; /* Fundo bege */
+    width: 50%; /* Define a largura da caixa */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}
