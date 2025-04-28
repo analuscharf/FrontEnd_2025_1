@@ -1,64 +1,92 @@
-﻿/* Estilo para o corpo */
+﻿/* Estilo geral */
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #fcf4dc; /* Fundo pastel amarelo claro */
-    color: #333; /* Texto escuro */
+    background-color: #fcf4dc;
+    color: #333;
+    font-size: calc(1em + 1vw); /* Ajusta tamanho da fonte de forma proporcional */
 }
 
-/* Estilo para o cabeçalho */
-header {
-    font-style: italic; /* Torna todo o texto do header em itálico */
-    text-align: center
+/* Estrutura principal usando Grid */
+#layout {
+    display: grid;
+    grid-template-rows: auto 1fr auto; /* Cabeçalho, conteúdo e rodapé */
+    grid-template-columns: 1fr 2fr 1fr; /* Três colunas: esquerda, centro e direita */
+    grid-template-areas:
+        "header header header"
+        "ads main links"
+        "footer footer footer";
+    gap: 20px;
+    min-height: 100vh; /* Ocupa a altura total da tela */
+    padding: 20px;
+    box-sizing: border-box;
+    border: 20px solid #5C4033;
 }
 
+
+/* Estilo do cabeçalho */
+#header {
+    grid-area: header;
+    background-color: #FDF5E6; /* Fundo bege claro */
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 20px solid #5C4033;
+    gap: 20px; /* Espaçamento entre elementos internos */
+}
+
+/* Imagem no cabeçalho */
 #minhafoto {
-    margin: 20px auto; /* auto centraliza horizontalmente */
-    border: 3px dashed #333;
-    display: block; /* transforma a imagem em um bloco, necessário para centralizar */
-    text-align: center
+    width: 20vw; /* Largura proporcional à tela */
+    height: auto;
+    border: 3px solid #333;
+    border-radius: 5px;
+    margin-right: 10px; /* Espaço entre a imagem e o texto */
 }
 
-h2 {
-    text-align: center; /* Centraliza o título */
-    margin: 0; /* Remove margens extras */
-    color: #5C4033
+
+/* Texto no cabeçalho */
+#text {
+    text-align: center;
 }
 
-.caixa {
-    border: 8px solid #5C4033; /* Borda bem espessa e marrom-escuro */
-    padding: 10px; /* Espaço interno entre o conteúdo e a borda */
-    margin: 50px auto; /* Centraliza a caixa horizontalmente e adiciona margem ao redor */
-    background-color: #FDF5E6; /* Fundo bege claro */
+#minhaloja {
+    display: block; /* Certifica-se de que a loja está em bloco */
+    background: #D2691E; /* Gradiente em tons terrosos */
+    border: 3px solid #5C4033; /* Borda sólida marrom-escuro */
+    padding: 20px; /* Espaço interno */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    width: 96%; /* Largura da caixa */
+    text-align: center; /* Centraliza o texto */
+    color: #FFF8DC; /* Cor do texto */
     text-align: center; /* Centraliza o texto dentro da caixa */
-    width: 80%; /* Define a largura da caixa */
-    font-family: Arial, sans-serif; /* Fonte legível */
-    text-align: left
 }
 
-article {
-    border: 8px solid #5C4033; /* Borda bem espessa e marrom-escuro */
-    padding: 10px; /* Espaço interno entre o conteúdo e a borda */
-    margin: 50px auto; /* Centraliza a caixa horizontalmente e adiciona margem ao redor */
-    background-color: #FDF5E6; /* Fundo bege claro */
-    text-align: center; /* Centraliza o texto dentro da caixa */
-    width: 80%; /* Define a largura da caixa */
-    font-family: Arial, sans-serif; /* Fonte legível */
-    text-align: left
+/* Coluna de anúncios (esquerda) */
+#ads {
+    grid-area: ads;
+    background-color: #FFF4EC; /* Fundo claro */
+    padding: 100px; /* Espaço interno maior para afastar o texto da borda */
+    text-align: justify; /* Ajusta o texto para alinhamento uniforme */
+    border: 20px solid #5C4033; /* Borda espessa */
+    box-sizing: border-box; /* Inclui bordas e padding no cálculo total */
+   }
+
+
+/* Coluna principal (centro) */
+#main {
+    grid-area: main;
+    background-color: lightgoldenrodyellow;
+    padding: 20px;
+    text-align: justify;
+    border: 2px solid #5C4033;
+    box-sizing: border-box;
 }
 
-dl {
-   text-align: center; /* Centraliza todo o texto */
-}
-
-dt {
-    border: 1px solid #5C4033; /* Borda fina marrom escuro */
-    padding: 5px; /* Espaço interno para afastar o texto da borda */
-    margin: 5px 0; /* Espaçamento externo entre os itens */
-    background-color: #FDF5E6; /* Cor de fundo bege claro */
-}
-
-
-.cabecalhotabela{
+.cabecalhotabela {
     font-weight: bold;
     background-color: #D2B48C; /* Bege terroso */
     color: #5C4033; /* Marrom escuro */
@@ -85,25 +113,25 @@ dt {
     border-collapse: collapse; /* Remove espaços entre as bordas */
 }
 
-    .tabela-horarios td {
-        background-color: #FDF5E6; /* Bege claro */
-        color: #5C4033; /* Marrom escuro */
-        border: 1px solid #5C4033; /* Borda marrom ao redor das células */
-        padding: 10px; /* Espaçamento interno */
-        text-align: center; /* Centraliza o texto nas células */
-    }
+.tabela-horarios td {
+    background-color: #FDF5E6; /* Bege claro */
+    color: #5C4033; /* Marrom escuro */
+    border: 1px solid #5C4033; /* Borda marrom ao redor das células */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto nas células */
+}
 
-    .tabela-horarios th {
-        background-color: #A0522D; /* Marrom médio (Sienna) */
-        color: #FFF8DC; /* Branco suave */
-        border: 1px solid #5C4033; /* Borda marrom ao redor do cabeçalho */
-        padding: 10px; /* Espaçamento interno */
-        text-align: center; /* Centraliza o texto no cabeçalho */
-    }
+.tabela-horarios th {
+    background-color: #A0522D; /* Marrom médio (Sienna) */
+    color: #FFF8DC; /* Branco suave */
+    border: 1px solid #5C4033; /* Borda marrom ao redor do cabeçalho */
+    padding: 10px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+}
 
 /* Estilo para tabela de ônibus */
 .tabela-onibus {
-    width: 80%; /* Define a largura da tabela (ajustada para centralização) */
+    width: 100%; /* Define a largura da tabela (ajustada para centralização) */
     margin: 0 auto; /* Centraliza horizontalmente */
     border: 2px solid #5C4033; /* Borda marrom ao redor da tabela */
     border-collapse: collapse; /* Remove espaços entre bordas das células */
@@ -130,17 +158,35 @@ dt {
     display: flex;
     flex-direction: wrap;
     justify-content: space-between;
-    
+}
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    margin: 0; /* Remove margens extras */
+    color: #5C4033
 }
 
 
+
+/* Configuração para cada coluna */
 .coluna {
+    flex: 1 1 30%; /* Cada coluna ocupará 30% da largura disponível */
+    background-color: #FFF4EC;
+    padding: 15px;
+    border-radius: 5px; /* Bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+}
+
+.coluna {
+    flex: 1 1 30%; /* Cada coluna ocupará 30% da largura disponível */
     border: 8px solid #5C4033; /* Borda bem espessa e marrom-escuro */
     padding: 10px; /* Espaço interno entre o conteúdo e a borda */
     margin: 50px auto; /* Centraliza a caixa horizontalmente e adiciona margem ao redor */
     background-color: #FDF5E6; /* Fundo bege claro */
     text-align: center; /* Centraliza o texto dentro da caixa */
-    width:30%; /* Define a largura da caixa */
+    width: 30%; /* Define a largura da caixa */
     font-family: Arial, sans-serif; /* Fonte legível */
     text-align: center
 }
@@ -160,18 +206,17 @@ dt {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-
 }
 
 #atividades img {
     width: 30%;
     height: auto;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+  
 }
 
 #atividades img:hover {
-    transform: scale(1.1);
+transform: scale(1.1);
 }
 
 
@@ -180,26 +225,80 @@ dt {
     font-weight: bold;
 }
 
+
+
+
+/* Coluna de links úteis (direita) */
+#links {
+    grid-area: links;
+    background-color: #FFF4EC;
+    padding: 20px;
+    text-align: center;
+    border: 20px solid #5C4033; /* Borda espessa */
+    box-sizing: border-box;
+}
+
+
+dl {
+    text-align: center; /* Centraliza todo o texto */
+}
+
+dt {
+    border: 1px solid #5C4033; /* Borda fina marrom escuro */
+    padding: 5px; /* Espaço interno para afastar o texto da borda */
+    margin: 5px 0; /* Espaçamento externo entre os itens */
+    background-color: #FDF5E6; /* Cor de fundo bege claro */
+}
+
+
+
+/* Coluna de links úteis (direita) */
+#footer {
+    grid-area: footer;
+    background-color: #FFF4EC;
+    padding: 20px;
+    text-align: center;
+    border: 20px solid #5C4033; /* Borda espessa */
+    box-sizing: border-box;
+    width: 100%; /* Largura da caixa */
+}
+
+#footerflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
 aside {
     background: linear-gradient(135deg, #8B4513, #D2691E, #F4A460); /* Gradiente em tons terrosos */
     border: 3px solid #5C4033; /* Borda sólida marrom-escuro */
     padding: 20px; /* Espaço interno */
     margin: 20px auto; /* Centraliza horizontalmente */
-    width: 80%; /* Largura da caixa */
+    width: 33%; /* Largura da caixa */
     text-align: center; /* Centraliza o texto */
-    font-family: Arial, sans-serif; /* Fonte legível */
     color: #FFF8DC; /* Cor do texto */
     text-align: center; /* Centraliza o texto dentro da caixa */
 }
 
 footer {
-    font-size: 12px;
     color: #6e2424;
-    border: 2px dotted #5C4033; /* Borda pontilhada marrom */
-    padding: 15px; /* Espaço interno da caixa */
-    margin-left: auto; /* Centraliza à direita */
-    margin-right: 0;
-    background-color: #FDF5E6; /* Fundo bege */
-    width: 50%; /* Define a largura da caixa */
-    text-align: center; /* Centraliza o texto dentro da caixa */
+   text-align: right; /* Centraliza o texto dentro da caixa */
 }
+
+
+/* Links úteis estilizados */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
+    color: #277756;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+

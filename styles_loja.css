@@ -1,0 +1,81 @@
+﻿/* Estilo geral */
+body {
+    font-family: cursive;
+    background-color: #fcf4dc; /* Fundo pastel amarelo claro */
+    color: #333; /* Texto escuro */
+}
+
+/* Cabeçalho */
+header {
+    grid-area: header_viajens;
+    position: fixed; /* Fixa a barra no topo */
+    top: 0; /* Posiciona no topo da tela */
+    left: 0;
+    width: 100%;
+    background-color: #A0522D; /* Marrom médio */
+    color: #FDF5E6; /* Fundo bege */
+    padding: 3px;
+    text-align: center;
+    z-index: 1000; /* Garante que fique acima de outros conteúdos */
+    font-size: smaller;
+    font-family: cursive;
+}
+
+/* Container de grid */
+.grid-viagens {
+    display: grid;
+    gap: 20px; /* Espaçamento entre os itens, horizontal e vertical */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Garante responsividade e tamanhos proporcionais */
+    padding: 20px; /* Adiciona espaço em torno do grid */
+}
+
+.grid-item img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+/* Itens do grid */
+.grid-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 5px; /* Espaçamento externo ao redor de cada item */
+    padding: 10px; /* Espaçamento interno dentro dos itens */
+    height: auto; /* Deixe o tamanho dos itens ajustarem ao conteúdo */
+     display: flex; /* Permite organizar os elementos dentro do item */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+    align-items: center; /* Centraliza os elementos no eixo horizontal */
+     background-color:  #A0522D; /* Fundo opcional para destacar */
+}
+
+.grid-item img {
+    width: 100%; /* Ajusta ao tamanho do contêiner */
+    height: 100%; /* Ajusta ao tamanho do contêiner */
+    object-fit: cover; /* Corta para preencher o espaço uniformemente */
+    object-position: center; /* Centraliza a parte visível da imagem cortada */
+}
+.grid-item h3 {
+    font-size: 1.5em; /* Tamanho do texto para o título */
+    color: #333333; /* Cor do título */
+    margin: 10px 0 5px 0; /* Espaçamento em torno do título */
+    text-align: center; /* Centraliza o título */
+     background-color: #fcf4dc; /* Fundo opcional para destacar */
+}
+
+.grid-item p {
+    font-size: 1em; /* Tamanho do texto para o comentário */
+    color: #555555; /* Cor diferenciada para o comentário */
+    margin: 5px 0; /* Espaçamento em torno do comentário */
+    text-align: center; /* Centraliza o comentário */
+    background-color: #fcf4dc; /* Fundo opcional para destacar */
+    padding: 5px; /* Espaço interno */
+    border-radius: 5px; /* Cantos arredondados para um visual mais limpo */
+}
+.grid-item p::before {
+    content: "Preço: R$";
+}
