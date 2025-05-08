@@ -1,4 +1,9 @@
-﻿/* Estilo geral */
+﻿/* Aplica para todos os elementos, incluindo pseudo-elementos */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
 body {
     margin: 0;
     padding: 0;
@@ -17,11 +22,11 @@ body {
         "header header header"
         "ads main links"
         "footer footer footer";
-    gap: 20px;
+    gap: 2%;
     min-height: 100vh; /* Ocupa a altura total da tela */
-    padding: 20px;
-    box-sizing: border-box;
-    border: 20px solid #5C4033;
+    padding: 2%;
+    box-sizing: border-box;  
+    margin: 0 auto; /* Centraliza na tela grande */
 }
 
 
@@ -29,24 +34,23 @@ body {
 #header {
     grid-area: header;
     background-color: #FDF5E6; /* Fundo bege claro */
-    padding: 20px;
+    padding: 2%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 20px solid #5C4033;
-    gap: 20px; /* Espaçamento entre elementos internos */
+    gap: 5%; /* Espaçamento entre elementos internos */
 }
 
 /* Imagem no cabeçalho */
 #minhafoto {
     width: 20vw; /* Largura proporcional à tela */
     height: auto;
-    border: 3px solid #333;
+    border: 20px solid #5C4033;
     border-radius: 5px;
-    margin-right: 10px; /* Espaço entre a imagem e o texto */
+    margin-right: 2%; /* Espaço entre a imagem e o texto */
 }
-
 
 /* Texto no cabeçalho */
 #text {
@@ -55,10 +59,10 @@ body {
 
 #minhaloja {
     display: block; /* Certifica-se de que a loja está em bloco */
-    background: #D2691E; /* Gradiente em tons terrosos */
+    background: #fcc6a0; /* Gradiente em tons terrosos */
     border: 3px solid #5C4033; /* Borda sólida marrom-escuro */
     padding: 20px; /* Espaço interno */
-    margin: 20px auto; /* Centraliza horizontalmente */
+    margin: 5% auto; /* Centraliza horizontalmente */
     width: 96%; /* Largura da caixa */
     text-align: center; /* Centraliza o texto */
     color: #FFF8DC; /* Cor do texto */
@@ -69,7 +73,7 @@ body {
 #ads {
     grid-area: ads;
     background-color: #FFF4EC; /* Fundo claro */
-    padding: 100px; /* Espaço interno maior para afastar o texto da borda */
+    padding: 5%; /* Espaço interno maior para afastar o texto da borda */
     text-align: justify; /* Ajusta o texto para alinhamento uniforme */
     border: 20px solid #5C4033; /* Borda espessa */
     box-sizing: border-box; /* Inclui bordas e padding no cálculo total */
@@ -80,10 +84,14 @@ body {
 #main {
     grid-area: main;
     background-color: lightgoldenrodyellow;
-    padding: 20px;
     text-align: justify;
     border: 2px solid #5C4033;
     box-sizing: border-box;
+    padding: 2%; /* Espaço interno */
+    border: 20px solid #5C4033;
+    margin: 0 auto;/* Centraliza horizontalmente */
+    max-width: 100%; /* Limita a largura para evitar expansão excessiva */
+    
 }
 
 .cabecalhotabela {
@@ -117,7 +125,7 @@ body {
     background-color: #FDF5E6; /* Bege claro */
     color: #5C4033; /* Marrom escuro */
     border: 1px solid #5C4033; /* Borda marrom ao redor das células */
-    padding: 10px; /* Espaçamento interno */
+    padding: 1%; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto nas células */
 }
 
@@ -125,7 +133,7 @@ body {
     background-color: #A0522D; /* Marrom médio (Sienna) */
     color: #FFF8DC; /* Branco suave */
     border: 1px solid #5C4033; /* Borda marrom ao redor do cabeçalho */
-    padding: 10px; /* Espaçamento interno */
+    padding: 1%; /* Espaçamento interno */
     text-align: center; /* Centraliza o texto no cabeçalho */
 }
 
@@ -135,6 +143,7 @@ body {
     margin: 0 auto; /* Centraliza horizontalmente */
     border: 2px solid #5C4033; /* Borda marrom ao redor da tabela */
     border-collapse: collapse; /* Remove espaços entre bordas das células */
+    box-sizing: border-box; /* Garante que a largura inclua a borda */
 }
 
 .tabela-onibus th {
@@ -143,6 +152,7 @@ body {
     border: 1px solid #5C4033; /* Borda marrom no cabeçalho */
     padding: 10px; /* Espaçamento interno no cabeçalho */
     text-align: center; /* Centraliza o texto no cabeçalho */
+    margin: 5%;
 }
 
 .tabela-onibus td {
@@ -156,7 +166,7 @@ body {
 
 .meusfavoritos {
     display: flex;
-    flex-direction: wrap;
+    flex-wrap:  wrap; 
     justify-content: space-between;
 }
 
@@ -169,18 +179,9 @@ h2 {
 
 
 /* Configuração para cada coluna */
-.coluna {
-    flex: 1 1 30%; /* Cada coluna ocupará 30% da largura disponível */
-    background-color: #FFF4EC;
-    padding: 15px;
-    border-radius: 5px; /* Bordas arredondadas */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
-}
 
 .coluna {
-    flex: 1 1 30%; /* Cada coluna ocupará 30% da largura disponível */
+    flex: 1 1 33.33%; /* Cada coluna ocupará 30% da largura disponível */
     border: 8px solid #5C4033; /* Borda bem espessa e marrom-escuro */
     padding: 10px; /* Espaço interno entre o conteúdo e a borda */
     margin: 50px auto; /* Centraliza a caixa horizontalmente e adiciona margem ao redor */
@@ -188,9 +189,10 @@ h2 {
     text-align: center; /* Centraliza o texto dentro da caixa */
     width: 30%; /* Define a largura da caixa */
     font-family: Arial, sans-serif; /* Fonte legível */
-    text-align: center
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
 }
-
 /* Pseudo-classes na lista de filmes */
 #top_filmes li:hover {
     color: #ff6600; /* Altera a cor do texto ao passar o mouse */
@@ -205,18 +207,20 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 5%;
+    overflow: hidden; /* Impede que elementos ultrapassem a área */
 }
 
 #atividades img {
     width: 30%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 10%;
+    overflow: hidden;
   
 }
 
 #atividades img:hover {
-transform: scale(1.1);
+transform: scale(1.2);
 }
 
 
@@ -232,10 +236,12 @@ transform: scale(1.1);
 #links {
     grid-area: links;
     background-color: #FFF4EC;
-    padding: 20px;
+    padding: 5%;
     text-align: center;
     border: 20px solid #5C4033; /* Borda espessa */
     box-sizing: border-box;
+    flex-shrink: 0; /* Impede que a coluna de links encolha */
+    margin: 20px auto; /* Mantém margem estável */
 }
 
 
@@ -245,8 +251,8 @@ dl {
 
 dt {
     border: 1px solid #5C4033; /* Borda fina marrom escuro */
-    padding: 5px; /* Espaço interno para afastar o texto da borda */
-    margin: 5px 0; /* Espaçamento externo entre os itens */
+    padding: 3%;  /* Espaço interno para afastar o texto da borda */
+    margin: 3% 0; /* Espaçamento externo entre os itens */
     background-color: #FDF5E6; /* Cor de fundo bege claro */
 }
 
@@ -256,7 +262,7 @@ dt {
 #footer {
     grid-area: footer;
     background-color: #FFF4EC;
-    padding: 20px;
+    padding: 1%;
     text-align: center;
     border: 20px solid #5C4033; /* Borda espessa */
     box-sizing: border-box;
@@ -272,8 +278,8 @@ dt {
 aside {
     background: linear-gradient(135deg, #8B4513, #D2691E, #F4A460); /* Gradiente em tons terrosos */
     border: 3px solid #5C4033; /* Borda sólida marrom-escuro */
-    padding: 20px; /* Espaço interno */
-    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 2%; /* Espaço interno */
+    margin: 2% auto; /* Centraliza horizontalmente */
     width: 33%; /* Largura da caixa */
     text-align: center; /* Centraliza o texto */
     color: #FFF8DC; /* Cor do texto */
@@ -289,7 +295,7 @@ footer {
 /* Links úteis estilizados */
 ul {
     list-style: none;
-    padding: 0;
+    padding: 2%;
 }
 
 ul li a {
@@ -300,5 +306,4 @@ ul li a {
 ul li a:hover {
     text-decoration: underline;
 }
-
 

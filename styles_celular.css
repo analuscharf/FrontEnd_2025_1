@@ -1,0 +1,338 @@
+/* Aplica para todos os elementos, incluindo pseudo-elementos */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Estilo geral */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fcf4dc;
+    color: #333;
+    font-size: calc(1em + 1vw); /* Ajusta tamanho da fonte de forma proporcional */
+}
+
+@media (max-width: 767px) {
+    #layout {
+      grid-template-columns: 1fr; /* Apenas uma coluna */
+      grid-template-rows: auto auto auto auto auto;
+      grid-template-areas:
+        "header"
+        "main"
+        "ads"
+        "links"
+        "footer";
+    }
+  }
+
+
+/* Estilo do cabeçalho */
+#header {
+    grid-area: header;
+    background-color: #FDF5E6; /* Fundo bege claro */
+    padding: 0.5%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid #5C4033;
+    gap: 5%; /* Espaçamento entre elementos internos */
+}
+
+/* Imagem no cabeçalho */
+#minhafoto {
+    width: 40vw; /* Largura proporcional à tela */
+    height: auto;
+    border: 0.23x solid #5C4033;
+    border-radius: 5px;
+    margin-right: 2%; /* Espaço entre a imagem e o texto */
+}
+
+/* Texto no cabeçalho */
+#text {
+    text-align: left;
+}
+
+#minhaloja {
+    display: block; /* Certifica-se de que a loja está em bloco */
+    background: #fcc6a0; /* Gradiente em tons terrosos */
+    border: 3px solid #5C4033; /* Borda sólida marrom-escuro */
+    padding: 20px; /* Espaço interno */
+    margin: 2% auto; /* Centraliza horizontalmente */
+    width: 96%; /* Largura da caixa */
+    text-align: center; /* Centraliza o texto */
+    color: #FFF8DC; /* Cor do texto */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}
+
+/* Coluna de anúncios (esquerda) */
+#ads {
+    grid-area: ads;
+    background-color: #FFF4EC; /* Fundo claro */
+    padding: 2%; /* Espaço interno maior para afastar o texto da borda */
+    text-align: justify; /* Ajusta o texto para alinhamento uniforme */
+    border: 10px solid #5C4033; /* Borda espessa */
+    box-sizing: border-box; /* Inclui bordas e padding no cálculo total */
+   }
+
+
+/* Coluna principal (centro) */
+#main {
+    grid-area: main;
+    background-color: lightgoldenrodyellow;
+    text-align: justify;
+    border: 2px solid #5C4033;
+    box-sizing: border-box;
+    padding: 2%; /* Espaço interno */
+    border: 10px solid #5C4033;
+    margin: 0 auto;/* Centraliza horizontalmente */
+    max-width: 100%; /* Limita a largura para evitar expansão excessiva */
+    
+}
+
+.cabecalhotabela {
+    font-weight: bold;
+    background-color: #D2B48C; /* Bege terroso */
+    color: #5C4033; /* Marrom escuro */
+    text-align: center; /* Centraliza o texto */
+    border: 1px solid #5C4033; /* Borda adicional para destaque */
+}
+
+.hora {
+    font-style: italic;
+    color: #A0522D; /* Marrom médio */
+}
+
+.disciplina {
+    background-color: #DEB887; /* Bege suave */
+    color: #5C4033; /* Texto marrom escuro */
+    font-weight: bold;
+    text-align: center; /* Centraliza disciplinas */
+}
+
+
+
+.tabela-horarios {
+    width: 100%; /* Ocupa toda a largura disponível */
+    border-collapse: collapse; /* Remove espaços entre as bordas */
+    table-layout: fixed; /* Colunas com largura fixa */
+    margin: 0 auto; /* Centraliza a tabela horizontalmente */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
+  }
+  
+  .tabela-horarios th,
+  .tabela-horarios td {
+    border: 1px solid #5C4033; /* Borda marrom */
+    padding: 8px; /* Espaçamento interno */
+    font-size: 0.9em; /* Tamanho da fonte ajustado */
+    text-align: center; /* Centraliza o texto */
+    overflow: hidden; /* Esconde o excesso de texto */
+    text-overflow: ellipsis; /* Adiciona reticências ao texto que ultrapassa */
+    white-space: nowrap; /* Impede quebra de linha */
+  }
+  
+
+  .tabela-horarios td {
+    background-color: #FDF5E6; /* Bege claro */
+    color: #5C4033; /* Marrom escuro */
+    border: 1px solid #5C4033; /* Borda marrom ao redor das células */
+}
+
+.tabela-horarios th {
+    background-color: #A0522D; /* Marrom médio (Sienna) */
+    color: #FFF8DC; /* Branco suave */
+    border: 1px solid #5C4033; /* Borda marrom ao redor do cabeçalho */
+
+}t
+
+
+/* Estilo para tabela de ônibus */
+.tabela-onibus {
+    width: 100%; /* Define a largura da tabela (ajustada para centralização) */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    border: 2px solid #5C4033; /* Borda marrom ao redor da tabela */
+    border-collapse: collapse; /* Remove espaços entre bordas das células */
+    box-sizing: border-box; /* Garante que a largura inclua a borda */
+}
+
+.tabela-onibus th {
+    background-color: #A0522D; /* Marrom médio */
+    color: #FFF8DC; /* Branco suave */
+    border: 1px solid #5C4033; /* Borda marrom no cabeçalho */
+    padding: 10px; /* Espaçamento interno no cabeçalho */
+    text-align: center; /* Centraliza o texto no cabeçalho */
+    margin: 5%;
+}
+
+.tabela-onibus td {
+    background-color: #FDF5E6; /* Bege claro */
+    color: #5C4033; /* Marrom escuro */
+    border: 1px solid #5C4033; /* Borda marrom entre células */
+    padding: 10px; /* Espaçamento interno nas células */
+    text-align: center; /* Centraliza o texto nas células */
+}
+
+
+.meusfavoritos {
+    display: flex;
+    flex-wrap:  wrap; 
+    justify-content: space-between;
+}
+
+h2 {
+    text-align: center; /* Centraliza o título */
+    margin: 0; /* Remove margens extras */
+    color: #5C4033
+}
+
+
+
+/* Configuração para cada coluna */
+
+.coluna {
+    flex: 1 1 100%; /* Cada coluna ocupará 30% da largura disponível */
+    border: 8px solid #5C4033; /* Borda bem espessa e marrom-escuro */
+    padding: 10px; /* Espaço interno entre o conteúdo e a borda */
+    margin: 10px auto; /* Centraliza a caixa horizontalmente e adiciona margem ao redor */
+    background-color: #FDF5E6; /* Fundo bege claro */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+    width: 100%; /* Define a largura da caixa */
+    font-family: Arial, sans-serif; /* Fonte legível */
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#container-colunas {
+    display: flex;
+    flex-direction: column; /* Organiza os elementos um abaixo do outro */
+    align-items: center; /* Centraliza as colunas */
+    justify-content: space-around;
+}
+
+/* Pseudo-classes na lista de filmes */
+#top_filmes li:hover {
+    color: #ff6600; /* Altera a cor do texto ao passar o mouse */
+    font-weight: bold;
+}
+
+#top_filmes li:first-child {
+    font-style: italic; /* Destaca o primeiro filme da lista */
+}
+
+#atividades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    overflow: hidden; /* Impede que as imagens ultrapassem o contêiner */
+    gap: 20px; /* Espaço uniforme entre as imagens */
+    padding: 20px; /* Espaço interno ao redor do contêiner */
+    box-sizing: border-box; /* Inclui padding e borda no cálculo do tamanho total */
+}
+
+
+#atividades img {
+    width: 45%;
+    border-radius: 10%;
+    z-index: 0;
+    position: relative;
+  
+}
+
+#atividades img:hover {
+    transform: scale(1.05); /* Efeito de zoom suave */
+  }
+
+#top_sites li:hover {
+    color: #ff6600; /* Altera a cor do texto ao passar o mouse */
+    font-weight: bold;
+}
+
+
+
+
+/* Coluna de links úteis (direita) */
+#links {
+    grid-area: links;
+    background-color: #FFF4EC;
+    padding: 5%;
+    text-align: center;
+    border: 10px solid #5C4033; /* Borda espessa */
+    box-sizing: border-box;
+    flex-shrink: 0; /* Impede que a coluna de links encolha */
+    margin: 20px auto; /* Mantém margem estável */
+}
+
+
+dl {
+    text-align: center; /* Centraliza todo o texto */
+}
+
+dt {
+    border: 1px solid #5C4033; /* Borda fina marrom escuro */
+    padding: 3%;  /* Espaço interno para afastar o texto da borda */
+    margin: 3% 0; /* Espaçamento externo entre os itens */
+    background-color: #FDF5E6; /* Cor de fundo bege claro */
+}
+
+
+
+/* Coluna de links úteis (direita) */
+#footer {
+    grid-area: footer;
+    background-color: #FFF4EC;
+    padding: 1%;
+    text-align: center;
+    border: 10px solid #5C4033; /* Borda espessa */
+    box-sizing: border-box;
+    width: 100%; /* Largura da caixa */
+}
+
+#footerflex {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+aside {
+    background: linear-gradient(135deg, #8B4513, #D2691E, #F4A460); /* Gradiente em tons terrosos */
+    border: 3px solid #5C4033; /* Borda sólida marrom-escuro */
+    padding: 2%; /* Espaço interno */
+    margin: 2% auto; /* Centraliza horizontalmente */
+    width: 33%; /* Largura da caixa */
+    text-align: center; /* Centraliza o texto */
+    color: #FFF8DC; /* Cor do texto */
+    text-align: center; /* Centraliza o texto dentro da caixa */
+}
+
+footer {
+    color: #6e2424;
+   text-align: right; /* Centraliza o texto dentro da caixa */
+}
+
+
+/* Links úteis estilizados */
+ul {
+    list-style: none;
+    padding: 2%;
+}
+
+ul li a {
+    color: #277756;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.tabela-onibus, .tabela-horarios {
+    display: block;
+    width: 100%; /* Faz a tabela ocupar toda a largura disponível */
+    overflow-x: auto; /* Permite rolagem horizontal caso necessário */
+    white-space: nowrap; /* Impede quebra de linhas dentro da tabela */
+    padding: 5px; /* Reduz espaçamento interno */
+ box-sizing: border-box; /* Garante que bordas e padding sejam incluídos no tamanho total */
+
+}
