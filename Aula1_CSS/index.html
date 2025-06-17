@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Imagem Seguindo o Clique + Tema</title>
+  <link rel="stylesheet" href="estilo.css">
+  <!-- Aqui entra o tema, trocado dinamicamente -->
+  <!-- Ex: <link id="tema" rel="stylesheet" href="temas/escuro.css"> -->
+</head>
+<body>
+  <h1 id="boas-vindas"></h1>
+  <button onclick="limparNome()">Esquecer meu nome</button>
+  <button onclick="setTheme('claro')">Tema Claro</button>
+  <button onclick="setTheme('escuro')">Tema Escuro</button>
+  <button onclick="virarPagina()">Virar Página!</button>
+
+  <img id="foto" src="https://via.placeholder.com/120" alt="Oi turma!" class="escondida">
+
+  <script src="script.js"></script>
+</body>
+</html>
